@@ -367,8 +367,4 @@ print("\nAverage accuracy of NB Classifier is:",round((NB1+NB2+NB3)/3,2))
 print("\nAverage accuracy of SVC polynomial Classifier is:",round((poly1+poly2+poly3)/3,2))
 print("\nAverage accuracy of SVC RBF Classifier is:",round((rbf1+rbf2+rbf3)/3,2))
 
-#The classifiers used, listed from highest average accuracy to lowest, are:
-#Support Vector Machine RBF, Neural Network MLP, Support Vector Machine Polynomial, and Naive Bayes.
-#In conclusion, 4 Classifiers were able to successfully predict whether a given input would indicate
-#a Benign or Malignant tumor. With the most accurate Classifier being the SVM RBF Classifier with 
-#an accuracy of 0.98
+print("The classifiers used, listed from highest average accuracy to lowest, are:\nSupport Vector Machine RBF, Neural Network MLP, Support Vector Machine Polynomial, and Naive Bayes. In conclusion, 4 Classifiers were able to successfully predict whether a given input would indicate a Benign or Malignant tumor. With the most accurate Classifier being the SVM RBF Classifier with an accuracy of 0.98")
