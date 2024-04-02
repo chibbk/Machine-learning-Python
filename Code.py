@@ -33,10 +33,12 @@ X_train_scaled = scaler.transform(X_train)
 scaler = StandardScaler().fit(X_train)
 X_test_scaled = scaler.transform(X_test)
 clf = clf.fit(X_train_scaled, y_train)
+#y_pred is the predicted values
 y_pred = clf.predict(X_test_scaled)
 
 MLP1=round(clf.score (X_test_scaled, y_test),2)
 print ('\nAccuracy for MLP classifier at random_state=40 is:', MLP1);
+#Displaying histogram plots to compare test values with predicted values
 plt.hist(y_test, bins = 20)
 plt.title("Comparison of Number of Observations by Diagnosis for test values")
 plt.xlabel("Diagnosis (B-Benign, M-Malignant)")
